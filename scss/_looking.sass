@@ -1,0 +1,40 @@
+.looking
+  padding-bottom: 61px
+
+  .container
+    max-width: 650px
+
+  &__title
+    text-align: center
+
+  &__input
+    margin-top: 14px
+    border: 1px solid #C5C5C5
+    background-color: #F8F9FA
+    @include flex(row, center, flex-start)
+    gap: 10px
+    border-radius: 100px
+    padding: 5px 17px
+    font-family: $sc-font
+
+    input
+      height: 100%
+      border: none
+      outline: none
+      background-color: #F8F9FA
+      padding: 10px 0
+      flex: 1
+
+  &__row
+    margin-top: 18px
+    @include flex(row, center, center)
+    flex-wrap: wrap
+    gap: 7px
+
+
+  &__item
+    @include font(400, 14px, 16.8px)
+    font-family: $sc-font
+    border: 1px solid #C5C5C5
+    padding: 13px 22px
+    border-radius: 100px

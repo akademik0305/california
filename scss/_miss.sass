@@ -1,0 +1,49 @@
+.miss
+  padding-bottom: 19px
+  .container
+    max-width: 935px
+
+  &__main
+    background-color: $gray-blue
+    padding: 27px 0 43px
+    text-align: center
+    border-radius: 16px
+
+  &__title
+
+  &__text
+    margin-top: 9px
+    @include font(400, 16px, 19.2px)
+    font-family: $sc-font
+  &__image
+    width: 233px
+    height: 200px
+    margin: 15px auto 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__input
+    margin-top: 15px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    border-radius: 100px
+    border: 1px solid $black
+    // overflow: hidden
+    input
+      padding: 16px 16px 16px 32px
+      background-color: $gray-blue
+      border: none
+      outline: none
+      border-top-left-radius: 100px
+      border-bottom-left-radius: 100px
+
+    button
+      background-color: $black
+      @include font(400, 14px, 16.8px, $white)
+      padding: 16px 32px
+      border-top-right-radius: 100px
+      border-bottom-right-radius: 100px

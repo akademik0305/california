@@ -1,0 +1,55 @@
+.ideas
+  padding-bottom: 75px
+
+  &__title
+    text-align: center
+
+  &__text
+    margin-top: 9px
+    text-align: center
+    max-width: 628px
+    @include font(400, 13px, 16.8px)
+    margin: 0 auto
+
+  &__row
+    margin-top: 56px
+    @include flex(row, flex-start, center)
+    gap: 35px
+
+  &__img
+    width: 620px
+    height: 420px
+    border-radius: 16px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+
+  &__footer
+    margin-top: 74px
+    @include flex(row, center, center)
+  &__button
+    @include flex(row, center, center)
+    @include font(400, 24px, 28.8px)
+    img
+      position: relative
+      transition: all .5s ease
+    &:hover
+      img
+        top: -8px
+        right: -8px
+      
+
+
+.ideas-main
+
+  &__text
+    margin-top: 23px
+    @include font(400, 24px, 30px)
+    font-family: $sc-font
+
+    &:first-child
+      margin-top: 14px
+

@@ -1,0 +1,43 @@
+.selled
+  padding-bottom: 75px
+  &__title
+    text-align: center
+
+  &__text
+    margin-top: 9px
+    text-align: center
+    max-width: 628px
+    @include font(400, 13px, 16.8px)
+    margin: 0 auto
+
+  &__row
+    margin-top: 31px
+    @include flex()
+    gap: 28px
+
+
+.selled-item
+
+  &__image
+    width: 247px
+    height: 214px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__main
+    margin-top: 33px
+
+  &__name
+    @include font(400, 22px, 27.5px)
+
+  &__desc
+    margin-top: 9px
+    @include font(400, 14px, 16.8px, $text-color)
+    font-family: $sc-font
+
+  &__price
+    margin-top: 25px
+    @include font(400, 18px, 21.6px)
+    font-family: $sc-font

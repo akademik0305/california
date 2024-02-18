@@ -1,0 +1,76 @@
+.categories
+  margin-top: 75px
+  padding-bottom: 75px
+  @extend %title
+
+  &__title
+    text-align: center
+
+
+  &__text
+    margin-top: 9px
+    text-align: center
+    max-width: 628px
+    @include font()
+    margin: 0 auto
+
+  &__row
+    margin-top: 90px
+    display: grid
+    grid-template-columns: 639px 312px 312px
+    grid-template-rows: 472px 270px
+    gap: 16px
+
+.categories-item
+  // filter: drop-shadow(0 4px 35px rgba(0, 0, 0, .25))
+  box-shadow: 0 4px 35px rgba(0, 0, 0, .25)
+  border-radius: 8px
+  @include flex()
+
+  &:nth-child(1)
+    flex-direction: column
+    align-items: flex-start
+    padding: 0 42px
+
+    .categories-item__main
+      align-self: flex-end
+      text-align: right
+      max-width: 192px
+
+  &:nth-child(2)
+    grid-row-end: span 2
+    flex-direction: column
+    justify-content: center
+    padding-left: 16px
+    .categories-item__main
+      margin-top: 41px
+      text-align: center
+    .categories-item__image
+      width: 100%
+
+  &:nth-child(3)
+    grid-row-end: span 2
+    flex-direction: column-reverse
+    justify-content: center
+    .categories-item__main
+      padding: 0 16px
+      text-align: center
+    .categories-item__image
+      width: 100%
+      margin-top: 41px
+
+  &:nth-child(4)
+    padding-right: 42px
+    justify-content: flex-end
+    .categories-item__main
+      text-align: right
+      width: 174px
+
+  &__image
+
+  &__name
+    @include font(400, 15px, 19.2px)
+    font-family: $sc-font
+
+  &__title
+    @include font(400, 32px, 38.4px)

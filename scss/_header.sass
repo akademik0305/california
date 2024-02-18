@@ -1,0 +1,30 @@
+.header
+  margin-top: 28px
+  &__row
+    background-color: $gray-blue
+    @include flex(row, center, center)
+    border-radius: 32px
+    height: 550px
+
+.header-main
+  padding-left: 56px
+
+  &__title
+    @include font(400, 58px, 69.6px)
+
+  &__text
+    margin-top: 19px
+    @include font(400, 16px, 19.2px)
+    font-family: $sc-font
+
+  &__button
+    margin-top: 30px
+    @include font(400, 18px, 21.6px)
+    border: 1px solid $black
+    height: 50px
+    width: 170px
+    @include flex(row, center, center)
+    border-radius: 200px
+
+
+.header-image

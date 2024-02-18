@@ -1,0 +1,109 @@
+.navbar
+  padding: 30px 0
+  &__row
+    @include flex(row)
+  &__logo
+
+.navbar-menu
+  @include flex(row)
+  gap: 33px
+  &__item
+
+    &_drop
+      position: relative
+      .navbar-menu__link
+        @include flex(row, center, center)
+        gap: 5px
+        &:hover
+
+  &__link
+    @include font()
+    font-family: $sc-font
+    text-transform: uppercase
+    position: relative
+
+    &:hover
+      &::after
+        width: 100%
+
+    &::after
+      content: ""
+      width: 0
+      height: 1px
+      background-color: $black
+      position: absolute
+      bottom: -2px
+      left: 0
+      transition: all .5s ease
+
+.navbar-actions
+  @include flex(row)
+  gap: 13px
+
+  &__search
+    @include flex(row, center, flex-end)
+    gap: 3px
+    cursor: default
+    input
+      // border: none
+      background-color: $white
+      outline: none
+      border-radius: 100px
+      padding: 4px 17px
+      font-family: $sc-font
+      width: 0
+      border: none
+      transition: all 0.6s linear
+      visibility: hidden
+      cursor: default
+      &.active
+        background-color: #F8F9FA
+        border: 1px solid #C5C5C5
+        width: 200px
+        visibility: visible
+
+    img
+      cursor: pointer
+
+  &__cart
+
+.drop-menu
+  position: absolute
+  top: 22px
+  left: 50%
+  transform: translateX(-50%)
+  width: auto
+  height: 0
+  background-color: $white
+  @include flex(column, center, center)
+  gap: 10px
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
+  padding: 16px 20px
+  border-radius: 8px
+  z-index: 100
+  transition: all 0.6s linear
+  overflow: hidden
+  padding: 0
+
+  &.active
+    height: 130px
+    padding: 16px 20px
+
+  &__item
+    @include font()
+    font-family: $sc-font
+    text-transform: uppercase
+    position: relative
+    &:hover
+      &::after
+        width: 100%
+
+    &::after
+      content: ""
+      width: 0
+      height: 1px
+      background-color: $black
+      position: absolute
+      bottom: -2px
+      left: 0
+      transition: all .5s ease

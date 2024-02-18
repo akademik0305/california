@@ -1,0 +1,49 @@
+.best
+  padding-bottom: 75px
+  &__title
+    text-align: center
+
+  &__text
+    margin-top: 9px
+    text-align: center
+    max-width: 628px
+    @include font(400, 13px, 16.8px)
+    margin: 0 auto
+
+  &__row
+    margin-top: 56px
+    @include flex()
+    gap: 28px
+
+.best-item
+  background-color: $bg-color
+  padding: 0 41px
+  text-align: center
+
+  &__image
+    width: auto
+    height: 250px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__main
+    margin-top: 33px
+
+  &__name
+    @include font(400, 28px, 35px)
+
+  &__desc
+    margin-top: 9px
+    @include font(400, 13px, 16.8px, $text-color)
+    font-family: $sc-font
+
+  &__button
+    margin: 30px auto
+    @include font(400, 18px, 21.6px)
+    border: 1px solid $black
+    height: 50px
+    width: 190px
+    @include flex(row, center, center)
+    border-radius: 200px

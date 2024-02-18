@@ -1,0 +1,70 @@
+.footer
+  background-color: $bg-color
+  padding-top: 45px
+
+  &__row
+    @include flex(row, flex-start)
+
+  &__logo
+
+  &__text
+    margin-top: 18px
+    @include font(400, 16px, 19.2px)
+    font-family: $sc-font
+
+  &__col
+    flex: 0 0 300px
+
+.container
+
+.footer-menu
+
+  &__title
+    @include font(400, 22px, 27.5px)
+
+  &__main
+    margin-top: 20px
+    @include flex(column, flex-start, flex-start)
+    gap: 15px
+
+  &__link
+    display: block
+    @include font(400, 17px, 21.6px)
+    font-family: $sc-font
+    position: relative
+    &:hover
+      &::after
+        width: 100%
+
+    &::after
+      content: ""
+      width: 0
+      height: 1px
+      background-color: $black
+      position: absolute
+      bottom: -2px
+      left: 0
+      transition: all .5s ease
+
+.footer-copy
+  margin-top: 80px
+  @include flex()
+  border-top: 1px solid #DCE5E2
+  padding-top: 53px
+
+  &__item
+    @include flex(row, center, center)
+    @include font(400, 18px, 21.6px)
+
+  &__button
+    @include flex(row, center, center)
+    font-family: $sc-font
+    margin-left: 10px
+    cursor: pointer
+    img
+      position: relative
+      transition: all .5s ease
+    &:hover
+      img
+        top: -5px
+        right: -5px
